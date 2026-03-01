@@ -1,76 +1,85 @@
-* {
-  box-sizing: border-box;
-}
-
+/* General Body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
   margin: 0;
-  background: #0f172a;
-  color: #e5e7eb;
+  padding: 20px;
   line-height: 1.6;
 }
 
-header {
-  background: #020617;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
-
-header p {
-  margin: 5px 0;
-  color: #cbd5f5;
-}
-
+/* Container */
 .container {
   max-width: 900px;
   margin: auto;
-  padding: 20px;
+  padding: 10px;
 }
 
+/* Card Sections */
 .card {
-  background: #020617;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-h2 {
-  color: #38bdf8;
-  border-bottom: 1px solid #1e293b;
-  padding-bottom: 6px;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
 
-h3 {
+/* Headings */
+.card h2 {
+  border-bottom: 2px solid #4a90e2;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  color: #4a90e2;
+}
+
+.card h3 {
   margin-top: 10px;
-  color: #e2e8f0;
+  color: #555;
 }
 
-ul {
-  padding-left: 20px;
+/* Lists */
+.card ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
 }
 
+/* Tags / Skills */
 .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 10px;
 }
 
 .tag {
-  display: inline-block;
-  background: #1e293b;
-  padding: 6px 12px;
-  margin: 6px 6px 0 0;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  color: #e5e7eb;
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9em;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #94a3b8;
+/* Contact Info */
+.card li strong {
+  width: 120px;
+  display: inline-block;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .tags {
+    flex-direction: column;
+  }
+  .card li strong {
+    display: block;
+    width: auto;
+    margin-bottom: 5px;
+  }
 }
