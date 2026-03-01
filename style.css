@@ -1,4 +1,4 @@
-/* General Body */
+/* ===== General Body ===== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f4f9;
@@ -8,14 +8,14 @@ body {
   line-height: 1.6;
 }
 
-/* Container */
+/* ===== Container ===== */
 .container {
   max-width: 900px;
   margin: auto;
   padding: 10px;
 }
 
-/* Card Sections */
+/* ===== Card Sections ===== */
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -30,7 +30,7 @@ body {
   box-shadow: 0 8px 15px rgba(0,0,0,0.15);
 }
 
-/* Headings */
+/* ===== Headings ===== */
 .card h2 {
   border-bottom: 2px solid #4a90e2;
   padding-bottom: 5px;
@@ -43,14 +43,14 @@ body {
   color: #555;
 }
 
-/* Lists */
+/* ===== Lists ===== */
 .card ul {
   list-style-type: disc;
   margin-left: 20px;
   padding-left: 0;
 }
 
-/* Tags / Skills */
+/* ===== Tags / Skills ===== */
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -66,13 +66,13 @@ body {
   font-size: 0.9em;
 }
 
-/* Contact Info */
+/* ===== Contact Info ===== */
 .card li strong {
   width: 120px;
   display: inline-block;
 }
 
-/* Responsive */
+/* ===== Responsive ===== */
 @media screen and (max-width: 600px) {
   .tags {
     flex-direction: column;
